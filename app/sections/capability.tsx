@@ -1,29 +1,20 @@
 import Image from "next/image";
 import React from "react";
+import SectionHeader from "../components/section-header";
 
 const Capability = () => {
   return (
-    <div className="flex flex-col items-center gap-4">
-      <div className="flex items-center">
-        <Image
-          src="/images/tech_header.gif"
-          alt="tech_header"
-          width={32}
-          height={32}
-        />
-        <span className="font-yeogiOttaeJalnan text-[#4E71FF] text-[20px]">
-          핵심 역량
-        </span>
-      </div>
-      <span className="font-bold text-[24px]">
-        성능 최적화와 안정적 구조 설계로 사용자 경험을 완성합니다
-      </span>
-      <div className="grid grid-flow-col grid-rows-1 gap-4 max-w-[1200px]">
+    <div
+      id="capability"
+      className="w-full flex flex-col items-center gap-4 max-w-[1200px]"
+    >
+      <SectionHeader img="/images/tech_header.gif" title="핵심 역량" />
+      <div className="grid grid-flow-col grid-rows-1 gap-4 ">
         <div className="card rounded-md shadow-md flex flex-col gap-2">
           <Image
             src="/images/card_1.jpg"
             alt="card_1"
-            width={350}
+            width={400}
             height={150}
             className="rounded-t-md"
           />
@@ -38,7 +29,7 @@ const Capability = () => {
           <Image
             src="/images/card_1.jpg"
             alt="card_1"
-            width={350}
+            width={400}
             height={150}
             className="rounded-t-md"
           />
@@ -53,7 +44,7 @@ const Capability = () => {
           <Image
             src="/images/card_1.jpg"
             alt="card_1"
-            width={350}
+            width={400}
             height={150}
             className="rounded-t-md"
           />

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import SectionHeader from "../components/section-header";
 
 const Tech = () => {
   type Stack = {
@@ -86,18 +87,8 @@ const Tech = () => {
     },
   ];
   return (
-    <div className="flex flex-col items-center gap-4">
-      <div className="flex items-center">
-        <Image
-          src="/images/tech_image.gif"
-          alt="tech_image"
-          width={32}
-          height={32}
-        />
-        <span className="font-yeogiOttaeJalnan text-[#4E71FF] text-[20px]">
-          기술 스택 및 도구
-        </span>
-      </div>
+    <div id="tech" className="flex flex-col items-center gap-4">
+      <SectionHeader img="/images/tech_image.gif" title="기술 스택 및 도구" />
       <div>
         <div className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-5">
           {stackList.map((item: Stack, idx) => {
