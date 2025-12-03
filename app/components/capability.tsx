@@ -28,7 +28,9 @@ const Capability = () => {
             className="rounded-t-md"
           />
           <div className="px-2 pb-2 flex flex-col">
-            <span className=" font-bold text-[24px]">title</span>
+            <span className=" font-bold text-[20px]">
+              한계를 넘어, 더 도전적인 환경으로
+            </span>
             <span className="text-gray-500">desc</span>
           </div>
         </div>
@@ -41,7 +43,9 @@ const Capability = () => {
             className="rounded-t-md"
           />
           <div className="px-2 pb-2 flex flex-col">
-            <span className=" font-bold text-[24px]">title</span>
+            <span className=" font-bold text-[20px]">
+              성능 최적화와 안정적 구조 설계
+            </span>
             <span className="text-gray-500">desc</span>
           </div>
         </div>
@@ -54,7 +58,9 @@ const Capability = () => {
             className="rounded-t-md"
           />
           <div className="px-2 pb-2 flex flex-col">
-            <span className=" font-bold text-[24px]">title</span>
+            <span className=" font-bold text-[20px]">
+              소통으로 기준을 세우고, 중복을 없애다
+            </span>
             <span className="text-gray-500">desc</span>
           </div>
         </div>
