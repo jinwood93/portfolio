@@ -1,6 +1,7 @@
 import Capability from "./components/capability";
 import Header from "./components/header";
 import Intoduce from "./components/intoduce";
+import Tech from "./components/tech";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       <Intoduce />
       <Header />
       <Capability />
-      <div>기술스택및도구</div>
+      <Tech />
       <div>경력</div>
       <div>프로젝트 상세</div>
       <div>etc</div>

@@ -20,6 +20,13 @@
   font-weight: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Paperozi";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
 
 @theme inline {
   --color-background: var(--background);
@@ -28,6 +35,7 @@
   --font-mono: var(--font-geist-mono);
   --font-yangjin: "Yangjin", system-ui, sans-serif;
   --font-yeogiOttaeJalnan: "YeogiOttaeJalnan", system-ui, sans-serif;
+  --font-paperozi: "Paperozi";
 }
 
 @media (prefers-color-scheme: dark) {
