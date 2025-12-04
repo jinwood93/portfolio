@@ -1,13 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import SectionHeader from "../components/section-header";
+import { StackProps } from "../constants/types";
 
 const Tech = () => {
-  type Stack = {
-    img: string;
-    title: string;
-  };
-
   const stackList = [
     {
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
@@ -91,7 +87,7 @@ const Tech = () => {
       <SectionHeader img="/images/tech_image.gif" title="기술 스택 및 도구" />
       <div>
         <div className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-5">
-          {stackList.map((item: Stack, idx) => {
+          {stackList.map((item: StackProps, idx) => {
             return (
               <div key={idx} className="flex relative group">
                 <Image src={item.img} alt={item.title} width={40} height={40} />

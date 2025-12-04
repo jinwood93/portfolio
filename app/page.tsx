@@ -2,6 +2,7 @@ import Capability from "./sections/capability";
 import Career from "./sections/career";
 import Header from "./sections/header";
 import Intoduce from "./sections/intoduce";
+import { Projects } from "./sections/projects";
 import Tech from "./sections/tech";
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
       <Capability />
       <Tech />
       <Career />
-      <div>프로젝트 상세</div>
+      <Projects />
       <div>etc</div>
       <div>contact me</div>
     </div>

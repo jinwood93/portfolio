@@ -3,15 +3,7 @@
 import clsx from "clsx";
 import Image from "next/image";
 import { useState } from "react";
-
-type CareerBoxProps = {
-  working?: boolean;
-  period: string;
-  company: string;
-  position: string;
-  componyInfo: string;
-  works: string[];
-};
+import { CareerBoxProps } from "../constants/types";
 
 const CareerBox = ({
   period,
@@ -19,6 +11,7 @@ const CareerBox = ({
   position,
   works,
   componyInfo,
+
   working = false,
 }: CareerBoxProps) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,6 +34,7 @@ const CareerBox = ({
           <span className="text-[14px] text-gray-500">{position}</span>
         </div>
         <span className="text-[14px]">회사 소개: {componyInfo}</span>
+
         <button
           className="flex justify-start w-fit cursor-pointer"
           onClick={() => {
