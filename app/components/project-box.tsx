@@ -21,7 +21,7 @@ const ProjectBox = (item: ProjectProps) => {
         </div>
         <div className="px-2 pt-2 flex flex-col gap-2 ">
           <span className=" font-bold text-[20px]">{item.title}</span>
-          <span className="text-gray-500 text-md">{item.desc}</span>
+          <span className="text-gray-500 text-[14px]">{item.desc}</span>
         </div>
       </div>
       <div className="px-2 pb-2 flex relative gap-2">

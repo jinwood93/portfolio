@@ -42,7 +42,7 @@ const CareerBox = ({
           }}
         >
           <span className={clsx("text-blue-600 text-[14px]")}>
-            {isOpen ? "주요 업무 가리기" : "주요 업무 보기"}
+            {isOpen ? "주요 업무 가리기" : "주요 업무 상세"}
           </span>
         </button>
         {isOpen && (

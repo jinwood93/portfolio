@@ -33,14 +33,43 @@ const Career = () => {
       ],
     },
   ];
+  const etcList = [
+    {
+      id: 1,
+      period: "2018.02 ~ 2020.04",
+      company: "Tamice Inc. 뉴욕 본사",
+      componyInfo: "뉴욕 관광 여행사",
+      position: "사원",
+      works: ["투어 상품 세일즈", "한국, 일본인 응대 및 투어 가이드"],
+    },
+  ];
   return (
     <div
       id="career"
       className="flex flex-col items-center gap-8 w-full max-w-3xl"
     >
       <SectionHeader img="/images/career.gif" title="경력 사항" />
+      <div className="flex w-full items-center gap-2">
+        <div className="h-px flex-1 bg-[linear-gradient(to_left,rgba(0,0,0,0.3),rgba(0,0,0,0))]"></div>
+        <div className="w-fit whitespace-pre text-[14px] text-gray-500">
+          개발 경력
+        </div>
+        <div className="h-px flex-1 bg-[linear-gradient(to_right,rgba(0,0,0,0.3),rgba(0,0,0,0))]"></div>
+      </div>
       <div className="flex flex-col gap-6 w-full">
         {careerList.map((career) => (
+          <CareerBox key={career.id} {...career} />
+        ))}
+      </div>
+      <div className="flex w-full items-center gap-2">
+        <div className="h-px flex-1 bg-[linear-gradient(to_left,rgba(0,0,0,0.3),rgba(0,0,0,0))]"></div>
+        <div className="w-fit whitespace-pre text-[14px] text-gray-500">
+          etc
+        </div>
+        <div className="h-px flex-1 bg-[linear-gradient(to_right,rgba(0,0,0,0.3),rgba(0,0,0,0))]"></div>
+      </div>
+      <div className="flex flex-col gap-6 w-full">
+        {etcList.map((career) => (
           <CareerBox key={career.id} {...career} />
         ))}
       </div>

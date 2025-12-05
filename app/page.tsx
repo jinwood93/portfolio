@@ -1,5 +1,6 @@
 import Capability from "./sections/capability";
 import Career from "./sections/career";
+import Contact from "./sections/contact";
 import Header from "./sections/header";
 import Intoduce from "./sections/intoduce";
 import { Projects } from "./sections/projects";
@@ -14,8 +15,7 @@ export default function Home() {
       <Tech />
       <Career />
       <Projects />
-      <div>etc</div>
-      <div>contact me</div>
+      <Contact />
     </div>
   );
 }
