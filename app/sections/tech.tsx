@@ -2,86 +2,9 @@ import Image from "next/image";
 import React from "react";
 import SectionHeader from "../components/section-header";
 import { StackProps } from "../constants/types";
+import { stackList } from "../constants/stacks";
 
 const Tech = () => {
-  const stackList = [
-    {
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-      title: "Next.js",
-    },
-    {
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      title: "React.js",
-    },
-    {
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-      title: "TypeScript",
-    },
-    {
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-      title: "JavaScript",
-    },
-    {
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original-wordmark.svg",
-      title: "React Native",
-    },
-    {
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg",
-      title: "Flutter",
-    },
-    {
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/styledcomponents/styledcomponents-original.svg",
-      title: "Styled-components",
-    },
-    {
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      title: "TailWind",
-    },
-    {
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
-      title: "Vite",
-    },
-    {
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/remix/remix-original.svg",
-      title: "Remix",
-    },
-    {
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
-      title: "Redux",
-    },
-    {
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
-      title: "MySQL",
-    },
-    {
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-      title: "Node.js",
-    },
-    {
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg",
-      title: "GraphQL",
-    },
-    {
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg",
-      title: "Docker",
-    },
-    {
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
-      title: "Github, Github Workflow",
-    },
-    {
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
-      title: "AWS",
-    },
-    {
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
-      title: "Firebase",
-    },
-    {
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
-      title: "Prisma",
-    },
-  ];
   return (
     <div id="tech" className="flex flex-col items-center gap-4">
       <SectionHeader img="/images/tech_image.gif" title="기술 스택 및 도구" />
