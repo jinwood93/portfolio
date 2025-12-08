@@ -12,7 +12,7 @@ const Capability = () => {
       <div className="grid grid-flow-col grid-rows-1 gap-4 ">
         <div className="card rounded-md shadow-md flex flex-col gap-2">
           <Image
-            src="/images/card_1.jpg"
+            src="/images/work.svg"
             alt="card_1"
             width={400}
             height={150}
@@ -42,7 +42,7 @@ const Capability = () => {
         </div>
         <div className="card rounded-md shadow-md flex flex-col gap-2">
           <Image
-            src="/images/card_1.jpg"
+            src="/images/seminar-bro.svg"
             alt="card_1"
             width={400}
             height={150}
