@@ -10,12 +10,6 @@ const Contact = () => {
         <Image src="/images/contact.svg" alt="phone" width={400} height={400} />
         <div className="flex gap-2 items-center">
           <div className="w-5 h-auto">
-            <Image src="/images/phone.png" alt="phone" width={20} height={20} />
-          </div>
-          <span className="text-[20px] ">: 010-7756-3251</span>
-        </div>
-        <div className="flex gap-2 items-center">
-          <div className="w-5 h-auto">
             <Image src="/images/email.png" alt="phone" width={20} height={20} />
           </div>
           <span className="text-[20px] ">: dhehdid1@gmail.com</span>

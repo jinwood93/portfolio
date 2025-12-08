@@ -3,7 +3,7 @@ import Image from "next/image";
 const Intoduce = () => {
   const descText = `저는 동료들과 협업할 때 서로 신뢰할 수 있는 개발 환경을 구성하는 것이 중요하다고 생각합니다. 
   팀의 신뢰도가 높아질수록 개인은 망설임 없이 실험하고 책임 있게 결정하며, 자연스럽게 능률이 오른다고 믿고 있기 때문입니다.
-  
+
   이에 기여하기 위해 저는 합의된 규칙과 예측 가능한 프로세스, 투명한 소통으로 동료들과의 심리적 안전을 높이기 위해 노력합니다. 이후 완성된 프로젝트를 팀과 함께 회고하며 같이 발전해나갈 때 가장 큰 성취감을 느낍니다.`;
   return (
     <div
@@ -17,7 +17,7 @@ const Intoduce = () => {
         height={400}
         className="absolute top-0"
       />
-      <div className="flex flex-col items-center justify-center mt-[332px]">
+      <div className="flex flex-col items-center justify-center mt-[332px] p-8 pattern-wall">
         <div className="flex flex-col items-center text-[40px] font-yangjin">
           <span>안녕하세요.</span>
           <span>프론트엔드 개발자</span>
