@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Spline from "@splinetool/react-spline/next";
 
 const Intoduce = () => {
   const descText = `저는 동료들과 협업할 때 서로 신뢰할 수 있는 개발 환경을 구성하는 것이 중요하다고 생각합니다. 
@@ -25,14 +26,27 @@ const Intoduce = () => {
         </div>
       </div>
       <div className="flex flex-col w-full max-w-2xl items-center gap-8">
-        <a
-          href="/files/kim_jinwoo_resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-fit px-4 py-2 rounded-md shadow-md text-gray-600 text-sm"
-        >
-          이력서 보기
-        </a>
+        <div className="flex gap-2">
+          <a
+            href="/files/kim_jinwoo_resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-fit px-4 py-2 rounded-md shadow-md text-gray-600 text-sm"
+          >
+            이력서 보기
+          </a>
+          <a
+            href="/files/career.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-fit px-4 py-2 rounded-md shadow-md text-gray-600 text-sm"
+          >
+            경력기술서 보기
+          </a>
+        </div>
+        <div>
+          <Spline scene="https://prod.spline.design/iM0N7LMO1HxoH-YO/scene.splinecode" />
+        </div>
         <div className="p-4 bg-gray-100 rounded-md">
           <span className="text-[14px] md:text-[16px] whitespace-pre-line leading-relaxed">
             {descText}

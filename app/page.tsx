@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="min-h-screen max-w-[1920px] px-6 md:px-8 lg:px-10 w-full mx-auto flex flex-col items-center gap-32">
       <Intoduce />
-      <Header />
+      {/* <Header /> */}
       <Capability />
       <Tech />
       <Career />

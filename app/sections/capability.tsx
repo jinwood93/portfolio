@@ -16,6 +16,7 @@ const Capability = () => {
             alt="card_1"
             width={400}
             height={150}
+            unoptimized
             className="rounded-t-md"
           />
           <div className="px-2 pb-2 flex flex-col">
