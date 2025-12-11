@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Spline from "@splinetool/react-spline/next";
+import SplitText from "../components/split-text";
 
 const Intoduce = () => {
   const descText = `저는 동료들과 협업할 때 서로 신뢰할 수 있는 개발 환경을 구성하는 것이 중요하다고 생각합니다. 
@@ -18,6 +18,20 @@ const Intoduce = () => {
         height={400}
         className="absolute top-0"
       />
+      <SplitText
+        text="Hello, GSAP!"
+        className="text-2xl font-semibold text-center"
+        delay={400}
+        duration={2}
+        ease="elastic.out"
+        splitType="chars"
+        from={{ opacity: 0, y: 40 }}
+        to={{ opacity: 1, y: 0 }}
+        threshold={0.1}
+        rootMargin="-100px"
+        textAlign="center"
+      />
+      <div className="w-[400px] h-[400px] absolute top-0"></div>
       <div className="flex flex-col items-center justify-center mt-[332px] p-8 pattern-wall">
         <div className="flex flex-col items-center text-[40px] font-yangjin">
           <span>안녕하세요.</span>
@@ -44,9 +58,7 @@ const Intoduce = () => {
             경력기술서 보기
           </a>
         </div>
-        <div>
-          <Spline scene="https://prod.spline.design/iM0N7LMO1HxoH-YO/scene.splinecode" />
-        </div>
+
         <div className="p-4 bg-gray-100 rounded-md">
           <span className="text-[14px] md:text-[16px] whitespace-pre-line leading-relaxed">
             {descText}
